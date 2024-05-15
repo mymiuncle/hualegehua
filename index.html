@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>🌸花了个花🌸</title>
+        <meta name="description" content="">
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/html5-boilerplate.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- 蛋糕组件 -->
+        <link rel="stylesheet" href="css/cake.css" media="screen" type="text/css"/>
+
+        <!-- 刮刮乐组件 -->
+        <link rel="stylesheet" href="./css/lucky-card.css">
+        <script src="./js/lucky-card.min.js"></script>
+
+    </head>
+
+    <body id="bodyStyle">
+        <div id="vcontainer">
+            <p style="position:relative;top:30px;color:#ee9ca7;font-weight: 10px;" id="title">花了个花</p>
+            <div class="pg">
+            
+            </div>
+
+            <div id="tools">
+                <div id="shuffle"></div>
+            </div>
+
+            <div id="stack">
+
+            </div>
+            <div id='footer'><p1>更新啦  刮刮乐+圣诞🎄版<br>刮奖愉快 🤗</p1></div>
+        </div>
+
+        <div id="lucky" class="modal">
+            <p style="color: #cc87ee;">恭喜你获得一张刮刮乐</p>
+            <p style="color: #cc87ee;">刮刮看叭~</p>
+            <div id="scratch">
+                <img id="card" src="images/hi.gif"></img>
+            </div>
+            <div style="text-align:center;">
+                <br><br><a href="#" class="button restart" rel="modal:close">再来一张！</a><br><br>
+            </div>  
+        </div>
+
+        <div id="over" class="modal">
+            <div><img style="width:50%;height:50%" src="images/bailan.png"></img></div>
+            <p>啊呀！摆烂了</p>
+            <br/><br/>
+            <div><a href="#" class="button" rel="modal:close">不摆烂,继续！！</a></div><br/><br/>
+            <div></div><a href="#" class="button restart" rel="modal:close">重来！</a></div>
+        </div>
+
+        <div id="win" class="modal">
+            <div><img style="width:50%;height:50%" src="images/hi.gif"></img></div>
+            <p1>你真的是泰裤辣~</p1><br>
+            <p2 id="shortTime"></p2><br>
+            <p2 id="pandaCount">这次发现了36只花花</p2> <br>
+            <p2 id="pandaCount">花花祝你</p2> <br>
+            <p2 id="pandaCount">圣诞节🎄快乐🎉</p2> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="normal">
+                <a href="#" class="button restart" rel="modal:close">再来！</a>
+            </div>
+            <div id="special" style="display: none;">
+                <div style="margin-bottom: 60px;"></div>
+                <p style="position:absolute;top:78%;left:4%;font-size:larger;">彩蛋?</p>
+                <div class="button-style1">
+                    <a href="ALinDeCake.html" class="lk1">
+                        <div class="link1">
+                            <div class="bt1">
+                                我很喜欢
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div><br></div>
+                <div class="button-style2">
+                    <a href="javascript:;" class="lk1">
+                        <div class="link2">
+                            <div class="bt1" id="dislike">
+                                我不喜欢
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <audio loop>
+            <source src="audio/All I Want for Christmas Is You.mp3" type="audio/mp3">
+        </audio>
+        <!-- <audio loop>
+            <source src="audio/gohome.mp3" type="audio/mp3">
+        </audio> -->
+        <!-- <audio loop>
+            <source src="audio/yoursmile.mp3" type="audio/mp3">
+        </audio> -->
+        <audio>
+            <source src="audio/bo.mp3"></source>
+        </audio>
+        <audio>
+            <source src="audio/combo.mp3"></source>
+        </audio>
+        <audio>
+            <source src="audio/fail.mp3"></source>
+        </audio>
+        <audio>
+            <source src="audio/win.mp3"></source>
+        </audio>
+        
+        
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.modal.min.css" />
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            LuckyCard.case({
+                ratio: .65
+            }, function() {
+                this.clearCover();
+            });
+        </script>
+    </body>
+</html>

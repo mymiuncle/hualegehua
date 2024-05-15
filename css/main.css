@@ -1,0 +1,288 @@
+/* ==========================================================================
+   Your custom CSS styles
+   ========================================================================== */
+@font-face {
+    font-family:"HanziPen SC";
+    src:url("../font/hanzipen-sc.otf");
+}
+.body1{
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(1px);
+}
+.body2{
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(1px);
+}
+p1{
+    font-size:20px;
+}
+p2{
+    font-size:20px;
+}
+#title{
+    font-size:50px;
+    color:white;
+    text-align:center;
+    margin: 0;
+    /* margin-bottom:-50px; */
+}
+#footer{
+    text-align:center;
+}
+#footer p1{
+    font-size:20px;
+    color:white;
+}
+
+#vcontainer {
+    width:800px;
+    height:auto;
+    margin: auto;
+    position:relative;
+}
+.stack1 {
+    background-color:white;
+    box-shadow:  -6px -6px #00f2ea, inset -6px -6px #ff0050;
+    height:110px;
+    width:720px;
+    margin: 40px auto;
+    position:relative;
+}
+.stack2 {
+    background-image:url("../images/zhalan.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height:110px;
+    width:720px;
+    margin: 40px auto;
+    position:relative;
+}
+#over, #win{
+    text-align:center;
+    padding:50px;
+    font-family:"HanziPen SC";
+    font-weight:bold;
+}
+#over p, #win p, p, p1{
+    font-size:35px;
+    font-family:"HanziPen SC";
+}
+#over .button, #win .button, #lucky .button {
+    height:50px;
+    width:150px;
+    font-size:20px;
+    text-align:center;
+    font-family:"HanziPen SC";
+    font-style:none;
+    color:#000;
+    padding:5px 20px;
+    background-color: #EEEEEE;
+    border: 3px solid #222;
+    box-shadow: 2px 3px rgb(0 0 0 / 0.4);
+    border-radius: 10px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+#shuffle{
+    background-image:url("../images/refresh-icon.png");
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:80px;
+    width:80px;
+}
+#tools{
+    margin:auto;
+    width: fit-content;
+}
+#tools div{
+    /* background-color: #eee; */
+    /* box-shadow: 6px 6px #ff0050; */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+#tools div:hover, #tools div:focus, #tools div:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow: 6px 6px #ff0050;
+    background-color: #ee9ca7b5;
+}
+#tools div:hover{
+    cursor:pointer;
+}
+.pg {
+    height:700px;
+    width:700px;
+    margin: 30px auto;
+    position:relative;
+}
+.card {
+    margin:4px;
+    outline: 3px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 6px 9px rgb(0 0 0 / 0.4);
+}
+.clickable {
+    cursor: pointer;
+}
+.unselectedcard{
+    position:absolute;
+}
+.selectedcard{
+    top: 12px;
+    left: 11px;
+    position:relative;
+    float:left;
+    margin-top:3px;
+    margin-right:3px;
+}
+.shade{
+    background-color:#2da716;
+    opacity:30%;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.clickable {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+.clickable:hover, .clickable:focus, .clickable:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+
+
+div[type="hua1"] {
+    background-image: url("../images/hua1.png");
+    background-size: cover;
+}
+div[type="hua2"] {
+    background-image: url("../images/hua2.png");
+    background-size: cover;
+}
+div[type="hua3"]  {
+    background-image: url("../images/hua3.png");
+    background-size: cover;
+}
+div[type="hua4"]  {
+    background-image: url("../images/hua4.png");
+    background-size: cover;
+}
+div[type="hua5"]  {
+    background-image: url("../images/hua5.png");
+    background-size: cover;
+}
+div[type="hua6"]  {
+    background-image: url("../images/hua6.png");
+    background-size: cover;
+}
+div[type="qizai"]  {
+    background-image: url("../images/qizai.png");
+    background-size: cover;
+}
+div[type="menglan"]  {
+    background-image: url("../images/menglan.png");
+    background-size: cover;
+}
+div[type="abao"]  {
+    background-image: url("../images/abao.jpg");
+    background-size: cover;
+}
+div[type="chengmao"]  {
+    background-image: url("../images/chengmao.jpg");
+    background-size: cover;
+}
+
+
+
+
+/* ==========================================================================
+   Your custom CSS styles for smartphones and screens smaller than 480 px
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+    /* insert styles here */
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Clearfix
+ * Adding a 'clearfix' class will allow parent elements to contain a floated child element
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.gray {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    filter: gray;
+}
+
+#card {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    background: #FAFAFA;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+#scratch {
+    width: 242px;
+    height: 242px;
+    margin: 50px auto 0;
+}
